@@ -5,7 +5,7 @@ status: draft
 
 # 设计本功能时需要注意的点
 
-本目录下的文档用于对比不同的 Agent 编排框架（LangGraph、Semantic Kernel、LlamaIndex、自研 Orchestrator、CrewAI/AutoGen 等）。在选择和设计编排层时，建议关注：
+本目录下的文档用于对比不同的 Agent 编排框架（LangGraph、Semantic Kernel、LlamaIndex、DeerFlow、自研 Orchestrator、CrewAI/AutoGen、OpenAI Assistants / Workflows 等）。在选择和设计编排层时，建议关注：
 
 1. 流程表达能力
 - 是否支持复杂流程：条件分支、循环、并行执行、补偿/回滚等。
@@ -47,6 +47,6 @@ status: draft
 
 ## 近期生态变化（简要）
 
-- 近年来，以 LangGraph、Semantic Kernel、LlamaIndex Agents、CrewAI 等为代表的「多 Agent/工作流」框架快速发展，逐渐从「单轮对话封装」转向「可视化 / 图式编排 + 状态持久化」的方向。
+- 近年来，以 LangGraph、Semantic Kernel、LlamaIndex Agents、CrewAI、DeerFlow 以及 OpenAI Assistants / Workflows 等为代表的「多 Agent/工作流」框架快速发展，逐渐从「单轮对话封装」转向「可视化 / 图式编排 + 状态持久化」的方向。
 - Open source 与托管服务并存：部分框架提供托管编排服务（带 UI、监控、版本管理），适合快速试验；也可以选择纯代码框架，结合自有基础设施搭建。
 - 越来越多框架开始拥抱事件流与可观测性（例如将节点执行、工具调用、模型调用拆成事件），这与 0005 中的驭控工程思想高度契合：编排层不只是「连线」，而是「结构化暴露整个 Agent 执行过程」。
