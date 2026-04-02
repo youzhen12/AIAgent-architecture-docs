@@ -6,6 +6,8 @@ owner: [负责人]
 last_updated: YYYY-MM-DD
 ---
 
+> 提示：如果是新场景，建议优先复制 `templates/maas-solution-design-template.md`，本文件可以视为历史兼容模板。
+
 # 1. 客户业务目标与技术约束
 
 - 客户业务背景：

@@ -7,6 +7,8 @@ last_updated: YYYY-MM-DD
 scene_id: scene-xxxx         # 可选：场景唯一标识
 ---
 
+> 提示：如果是新场景，建议优先复制 `templates/architecture-overview-template.md`，本文件可以视为历史兼容模板。
+
 # 1. 背景与目标
 
 - 场景简介：
