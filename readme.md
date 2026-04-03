@@ -92,12 +92,25 @@
   - 在 `aia-agent-architecture/decisions/` 下新建目录 `000x-some-topic/`，添加 `README.md` 与若干方案对比文档；
   - 同时新增 `aia-agent-architecture/decisions/000x-some-topic.md`，按 ADR 模式写清本项目当前决策。
 
-- 新增一个业务场景：
+ - 新增一个业务场景：
   - 在 `docs/` 下新建 `scene-something/` 目录；
   - 复制模板：
     - `aia-agent-architecture/templates/scene-architecture-overview-template.md` → `scene-something/architecture-overview.md`
     - 按需要增加 `ai-application-overview.md` 与 `maas-solution-design.md`；
   - 在 `architecture-overview.md` 的核心技术选型章节中引用相关 `decisions/000x-*.md`。
+
+### 示例场景：`scene-kingdee-ai-xingchen`
+
+面向央国企及大型企业的「企业管理 AI 星辰平台」场景，基于企业级 AI 底座（如金蝶 AI 苍穹）构建模型层、数据中台、Agent 编排与多业务 SaaS 的一体化架构，通过多智能体重塑财务、人力、供应链等全场景管理能力。
+
+代表性架构要点包括：
+- 企业级 AI 平台：统一 AI 底座 + EBC / PBC 可组合架构；
+- 模型与智能体层：多类型大模型 + 管理助手 Agent + 业务 AI Agent 矩阵；
+- 数据与知识层：数据中台、企业知识管理与结构化/非结构化数据一体治理；
+- Agent 开发与编排：Agent 开发平台、流程/任务编排、多 Agent 协同能力；
+- 业务应用层：财务、人力、供应链、采购、制造、全渠道、协同等企业管理云应用；
+- 开放接口与生态：API 优先、低代码与应用/能力市场，支持企业与 ISV 插件扩展；
+- 安全与合规：云原生基础设施、权限与审计、风控与信创适配能力。
 
 - 修改已有决策：
   - 优先更新对应的 `000x-*.md` 顶层 ADR，并在其中说明变更原因与影响；
