@@ -84,8 +84,22 @@ scene_id: scene-xxx
 
 # 5. 核心组件与流程
 
-- 组件清单与职责：
-- 关键流程说明（2–3 条）：
+> 本节可以看作「场景级运行时设计」，建议结合一张逻辑架构图阅读。
+
+## 5.1 组件清单与职责
+
+- 入口层（CLI / IDE / Web / MCP 等）：
+- Orchestrator / Agent 编排层：
+- 内置 Agents（如 Explore / Plan / General Purpose / Verification 等）：
+- Tool Runtime 层（文件 / 搜索 / 任务 / Bash 等工具 + 权限 / Hooks）：
+- 模型网关与向量服务：
+- Observability & Telemetry：
+
+## 5.2 关键流程说明（2–3 条）
+
+- 流程 A：典型「从需求到落地」全链路（例如 探索 → 规划 → 实现 → 验证）：
+- 流程 B：高危操作的权限与 Hook 流程：
+- 流程 C（可选）：Skill / Plugin / MCP 驱动的团队工作流：
 
 # 6. 数据与存储设计
 

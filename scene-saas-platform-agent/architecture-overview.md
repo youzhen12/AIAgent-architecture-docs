@@ -193,10 +193,7 @@ scene_id: scene-saas-platform-agent
 
 # 11. 关联文档
 
-- 决策文档：
-  - 向量数据库选型：`../aia-agent-architecture/decisions/0001-vector-db-selection/`
-  - Agent 编排框架选型：`../aia-agent-architecture/decisions/0002-agent-orchestration-framework-selection/`
-  - 模型与推理服务选型：`../aia-agent-architecture/decisions/0003-model-and-inference-service-selection/`
-  - 可观测性与日志方案选型：`../aia-agent-architecture/decisions/0004-observability-and-logging-selection/`
+- 研究与调研笔记（如有）：
+  - （预留）
 - 工程设计：
   - 提示词 / 上下文 / 驭控工程：`../aia-agent-architecture/decisions/0005-engineering-design/`

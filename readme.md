@@ -1,20 +1,18 @@
 
 ## 项目简介
 
-本项目是一个面向开发者的架构设计参考，目标是：
+本项目是一个面向开发者的 AIAgent 架构设计参考，目标是：
 
-- 总结AIAgent相关技术和架构方案
-- 支持不同业务场景下的 AI Agent 解决方案快速搭建与对比
+- 总结 AIAgent 相关技术和架构方案
+- 支持不同业务场景下的 AIAgent 解决方案快速搭建与对比
 
 
 ## 文档结构
 
 - `readme.md`：当前文件，文档入口和整体说明
-- `aia-agent-architecture/`
-  - `overview.md`：AIAgent 总体架构与本目录导航
-  - `decisions/`：按编号组织的技术选型与工程决策
-    - `000x-some-topic/`：该主题的对比材料（README + 各方案分析）
-    - `000x-some-topic.md`：本项目在该主题上的顶层 ADR 决策
+- `aia-agent-architecture/`：通用 AIAgent 架构与技术决策
+  - `overview.md`：整体架构分层 + 本目录导航
+  - `decisions/`：按编号组织的技术选型与工程决策（0001–0010）
   - `templates/`：通用模板
     - `architecture-overview-template.md`：通用架构总览模板
     - `scene-architecture-overview-template.md`：`scene-*/architecture-overview.md` 场景模板
@@ -25,6 +23,10 @@
     - `ai-application-overview.md`：场景与需求说明
     - `architecture-overview.md`：基于模板的场景级架构总览
     - `maas-solution-design.md`（如适用）：端到端解决方案设计
+- `AIMaaSdocs/`：基于上述架构与场景文档的「二次包装」，面向 AI MaaS 方案
+  - `scene-landscape.md`：按行业/场景梳理现有资产
+  - `maas-poc-playbook-temp.md`：MaaS POC / 测试策略模板
+  - `cases/`：按场景整理的标杆 MaaS 案例草稿
 
 ### 现有 `decisions/` 子目录说明
 
@@ -69,14 +71,19 @@
 - 当项目演进或技术更替时：
   - 优先更新对应的 `decisions/000x-*.md` 决策文档及相关场景架构文档，并在文档中明确「变更原因」和「影响范围」。
 
-### 推荐阅读路径
+### 推荐阅读路径（按角色）
 
 - 对 AIAgent 概念不熟：
-  - 从 `research/`（如有）与各场景的 `ai-application-overview.md` 入手；
+  - 从 `research/`（如有）与各场景的 `ai-application-overview.md` 入手，从业务价值和典型工作流开始；
 - 想了解整体架构：
-  - 阅读 `aia-agent-architecture/overview.md` 与关键 `decisions/000x-*.md`；
+  - 阅读 `aia-agent-architecture/overview.md`，了解整体分层与 0001–0010 决策主题；
+  - 根据需要跳转到对应 `decisions/000x-*.md` 查看具体选型与权衡；
 - 为某个场景做落地：
-  - 从该场景目录下的 `ai-application-overview.md` → `architecture-overview.md` → `maas-solution-design.md`（如有），并结合 `decisions/000x-*.md` 调整选型。
+  - 从该场景目录下的 `ai-application-overview.md` → `architecture-overview.md` → `maas-solution-design.md`（如有）；
+  - 在场景文档的「核心技术选型」章节中，结合 `aia-agent-architecture/decisions/000x-*.md` 的决策快照调整选型；
+- 需要对外输出 AI MaaS 方案：
+  - 先看 `AIMaaSdocs/scene-landscape.md` 了解已有场景资产；
+  - 再结合对应 `scene-*/` 下的场景架构与 `AIMaaSdocs/maas-poc-plan-*.md` 模板，组织成对客户可展示的方案与 POC 计划。
 
 ## Frontmatter 建议规范
 

@@ -30,3 +30,7 @@ last_updated: YYYY-MM-DD
   - 把上述内容以「行业场景视图 + 方案模板 + 案例」的方式重新组织，便于：
     - 面向客户讲解方案；
     - 快速为新场景复用已有模板与最佳实践。
+
+> 提示：
+> - 如需修改底层技术选型或架构，请回到 `aia-agent-architecture/decisions/000x-*.md` 与对应 `scene-*/architecture-overview.md`；
+> - 如需新增业务场景，请先在 `docs/scene-*/` 下按模板完善场景文档，再在本目录中补充 MaaS 视角的行业视图、POC 计划与案例。

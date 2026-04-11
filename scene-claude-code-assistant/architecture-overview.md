@@ -338,12 +338,5 @@ scene_id: scene-claude-code-assistant
 
 # 11. 关联文档
 
-- ADR 决策文档：
-  - `aia-agent-architecture/decisions/0001-vector-db-selection/`
-  - `aia-agent-architecture/decisions/0002-agent-orchestration-framework-selection/`
-  - `aia-agent-architecture/decisions/0003-model-and-inference-service-selection/`
-  - `aia-agent-architecture/decisions/0004-observability-and-logging-selection/`
-  - `aia-agent-architecture/decisions/0005-engineering-design/`
-  - `aia-agent-architecture/decisions/0006-foundation-models-selection/`
 - 研究与调研笔记：
   - `research/claude-code-architecture-study.md`
